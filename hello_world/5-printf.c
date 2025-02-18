@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 /**
  * main - Using printf to write program in C
+ *
  * Return
  * Always 0
  */

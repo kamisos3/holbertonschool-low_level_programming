@@ -1,11 +1,11 @@
+/** 
+ * main - Using puts to write a C language program
+ */
+
 #include <stdio.h>
-#include "4-puts.c"
 
-init main ()
+init main (void)
 {
-	char* str1 = "/"Programming is like a multilingual puzzle\n";
-	puts(str1);
-
-
-	return(0) ;
-} 
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}

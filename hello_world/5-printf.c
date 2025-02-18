@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Using printf to write program in C
+ * main-Using printf to write program in C
  *
  * Return
  * Always 0

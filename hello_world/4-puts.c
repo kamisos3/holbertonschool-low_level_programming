@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * main - Using puts to write a C language program
  *
  *

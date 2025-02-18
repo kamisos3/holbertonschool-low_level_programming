@@ -2,7 +2,7 @@
 /**
 * main - Using printf to write program in C
 *
-* Return
+* Return:
 * Always 0
 *
 */

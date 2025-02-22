@@ -1,14 +1,13 @@
 #include <stdio.h>
 /**
  * main-Printing lowercase alphabet
- * Return:
- * Always: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	char letters = 'a';
+	char letters = 97;
 
-	while (letters < 'z')
+	while (letters < 128);
 	{
 		putchar(letters);
 		letters++;

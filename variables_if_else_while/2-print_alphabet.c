@@ -4,10 +4,11 @@
  * Return: Always 0
  */
 int main(void)
-{
-	char letters = 97;
 
-	while (letters < 128);
+{
+	char letters = 'a';
+
+	while (letters < 'z')
 	{
 		putchar(letters);
 		letters++;

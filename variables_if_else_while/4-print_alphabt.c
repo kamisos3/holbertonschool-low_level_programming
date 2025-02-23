@@ -13,9 +13,9 @@ int main(void)
 		if (letters != 101 && letters != 113)
 		{
 			putchar(letters);
-		}	
-		letters++;	
+		}
+		letters++;
 	}
 	putchar('\n');
 	return (0);
-}	
+}

@@ -13,7 +13,7 @@ int main(void)
 		putchar(letters);
 		letters++;
 	}
-	while (LETTERS < 65)
+	while (LETTERS < 90)
 	{
 		putchar(LETTERS);
 		LETTERS++;

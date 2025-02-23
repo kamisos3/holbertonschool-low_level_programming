@@ -7,7 +7,7 @@ int main(void)
 {
 	char letters = 122;
 
-	while (letters < 96)
+	while (letters > 96)
 	{
 		putchar(letters);
 		letters--;

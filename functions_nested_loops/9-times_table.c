@@ -2,7 +2,7 @@
 /**
  *times_table-table nine times
  *
- * Return: 
+ * Return:
  * Always 0
  */
 

@@ -3,8 +3,6 @@
 /**
  *_abs-absolute value of intenger
  *@r:Intenger to compute absolute value
- * Return:
- * Always 0
  *
  * Return: Absoulte value of r.
  */

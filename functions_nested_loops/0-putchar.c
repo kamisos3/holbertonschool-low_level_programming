@@ -2,8 +2,6 @@
 #include <stdio.h>
 /**
  * main - Printing a word repeatedly
- *
- * Description: Making a program that prints _putchar.
  * Return: Always 0 
  */
 int main(void)

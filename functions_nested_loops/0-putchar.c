@@ -1,14 +1,13 @@
 #include "main.h"
+
 /**
  * main - Printing a word repeatedly
  *
  * Description: Making a program that prints _putchar.
- * Return:
- * Always 0 (Success)
+ * Return: Always 0 
  */
 int main(void)
 {
-
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');

@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- *
  * print_line - print '_' if n is more than 0
- *
  */
 void print_line(int n)
 {

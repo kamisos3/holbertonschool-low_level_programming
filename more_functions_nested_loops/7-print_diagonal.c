@@ -12,9 +12,9 @@ void print_diagonal(int n)
 		_putchar('\n');
 		return;
 	}
-	for (i = 0; i < 0; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (j = 0; i < j; j++)
+		for (j = 0; j < i; j++)
 		{
 			_putchar(' ');
 		}

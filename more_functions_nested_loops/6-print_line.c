@@ -1,10 +1,12 @@
 #include "main.h"
 /**
  * print_line - print '_' if n is more than 0
+ * @n: check character
  */
 void print_line(int n)
 {
 	int i;
+	int n;
 
 	if (n > 0)
 	{

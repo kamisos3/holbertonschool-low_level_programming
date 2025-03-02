@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -9,12 +10,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	char *original_dest = dest;
 
-	char *result = malloc(strlen(dest) + strlen(src) + 1);
+	while (*dest != '\0')
+	{
+		dest++;
+	}
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
 
-	strcpy(result, dest);
-	strcat(result, src);
-	result[strlen(dest) + strlen(src)] = '\0';
-
-	return (result);
+	return (original_dest);
 }

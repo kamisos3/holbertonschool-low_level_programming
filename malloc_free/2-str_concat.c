@@ -42,6 +42,10 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	/*Copia nuevo contenido de s2 al concatenated string*/
+	for (i = 0; i < len1; i++)
+	{
+		concat_str[i] = s1[i];
+	}
 	for (j = 0; j < len2; j++, i++)
 	{
 		concat_str[i] = s2[j];

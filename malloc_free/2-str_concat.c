@@ -51,6 +51,5 @@ char *str_concat(char *s1, char *s2)
 		concat_str[i] = s2[j];
 	}
 	concat_str[i] = '\0'; /*Termina el concatenated string*/
-
 	return (concat_str);
 }

@@ -9,11 +9,6 @@
  * Return: If theres a match 1, if its 0 or has no match -1 and 0 if its NULL
  *
  */
-int is_98(int value)
-{
-	return (value == 98);
-}
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
@@ -25,7 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		if (cmp(array[i]) != 0)/*Searches for match*/
+		if (cmp(array[i]) == 1)/*Searches for match*/
 			return (i);/*Returns index of the first element*/
 	}
 	return (-1); /*No match was found*/

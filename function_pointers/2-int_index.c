@@ -13,23 +13,15 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (array == NULL || cmp == NULL)
+	if (array == NULL || size <= 0)
 	{
-		return (0);/*Invalid inputs*/
+		return (-1);/*Invalid inputs*/
 	}
 
 	for (i = 0; i < size; i++)
 	{
-		if (cmp(array[i]))/*Searches for match*/
-			return (1);/*If there is match*/
+		if (cmp(array[i]) == 1)/*Searches for match*/
+			return (i);/*Returns index of the first element*/
 	}
-	if (size <= 0)
-	{
-		return (-1);
-	}
-
-	else
-	{
-		return (-1); /*No match was found*/
-	}
+	return (-1); /*No match was found*/
 }

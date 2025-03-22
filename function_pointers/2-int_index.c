@@ -9,6 +9,11 @@
  * Return: If theres a match 1, if its 0 or has no match -1 and 0 if its NULL
  *
  */
+int is_98(int value)
+{
+	return (value == 98);
+}
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;

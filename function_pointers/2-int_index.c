@@ -23,5 +23,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]) == 1)/*Searches for match*/
 			return (i);/*Returns index of the first element*/
 	}
+
 	return (-1); /*No match was found*/
+
 }

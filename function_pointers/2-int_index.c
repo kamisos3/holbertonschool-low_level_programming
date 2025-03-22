@@ -20,8 +20,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		if (cmp(array[i]) == 1)/*Searches for match*/
-			return (1);/*Returns index of the first element*/
+		if (cmp(array[i]) != 0)/*Searches for match*/
+			return (i);/*Returns index of the first element*/
 	}
 	return (-1); /*No match was found*/
 }

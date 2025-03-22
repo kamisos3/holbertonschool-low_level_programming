@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (array == NULL || size <= 0)
+	if (array == NULL || cmp == NULL || size <= 0)
 	{
 		return (-1);/*Invalid inputs*/
 	}
@@ -23,7 +23,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]) == 1)/*Searches for match*/
 			return (i);/*Returns index of the first element*/
 	}
-
 	return (-1); /*No match was found*/
-
 }

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
- * main - Calculator that uses functiion pointers
+ * main - Enters here
  * @argc: counts arguments
  * @argv: argument vector
  *
@@ -30,11 +30,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-
-	if ((*argv[2] == '/' || *argv[2] == '%' && b == 0)
-			printf("Error\n");
-			return (100);
-			}
-			printf("%d\n", op_func(a, b));
-			return (0);
-			}
+	if ((*argv[2] == '/' || *argv[2] == '%') &&
+			b == 0)			{
+		printf("Error\n");
+		return (100);
+	}
+	printf("%d\n", op_func(a, b));
+	return (0);
+}

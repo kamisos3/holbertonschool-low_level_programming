@@ -26,9 +26,7 @@ int (*get_op_func(char *s))(int, int)
 		if (*(ops[i].op) == *s && s[1] == '\0')/*Compares strings*/
 
 			return (ops[i].f);/*Returns the corresponding operator function*/
+		i++;
 	}
-	i++;
+	return (NULL);/*If theres not match*/
 }
-return (NULL);/*If theres not match*/
-}
-

@@ -6,7 +6,8 @@
  * @argc: counts arguments
  * @argv: argument vector
  *
- * Return: 0
+ * Return: 0 for success. 98 wrong number of arguments,
+ * 99 invalid operator, 100 on divisions that are 0
  */
 int main(int argc, char *argv[])
 {
@@ -29,6 +30,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	printf("%d\n", op_func(a, b));
-	return (0);
-}
+
+	if ((*argv[2] == '/' || *argv[2] == '%' && b == 0)
+			printf("Error\n");
+			return (100);
+			}
+			printf("%d\n", op_func(a, b));
+			return (0);
+			}

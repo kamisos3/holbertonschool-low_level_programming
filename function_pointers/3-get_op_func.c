@@ -19,12 +19,16 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; ops[i].op != NULL; i++)
+	i = 0;
+
+	while (ops[i].op != NULL)/*Verify if string matches operator*/
 	{
 		if (*(ops[i].op) == *s && s[1] == '\0')/*Compares strings*/
 
 			return (ops[i].f);/*Returns the corresponding operator function*/
 	}
-	return (NULL);
+	i++;
+}
+return (NULL);/*If theres not match*/
 }
 

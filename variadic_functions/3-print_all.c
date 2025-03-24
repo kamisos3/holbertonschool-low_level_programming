@@ -18,33 +18,34 @@ void print_all(const char * const format, ...)
 	{
 		if (i < 0)
 		{
-			switch (format[i])
-			{
-				case 'c': /*If its character*/
-					printf("%c", va_arg(args, int));
-					break;
-				case 'i':
-					printf("%d", va_arg(args, int));
-					break;
-				case 'f':/*For float*/
-					printf("%f", va_arg(args, double));
-					break;
-				case 's':/*For strings*/
-					str_arg = va_arg(args, char *);
-					if (str_arg == NULL)
-					{
-						printf("(nil)");
-					} else
-					{
-						printf("%s", str_arg);
-					}
-					break;
-				default:
-					break;
-			}
-			i++;
+			printf(",");
 		}
-		va_end(args);
-		printf("\n");
+		switch (format[i])
+		{
+			case 'c': /*If its character*/
+				printf("%c", va_arg(args, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				break;
+			case 'f':/*For float*/
+				printf("%f", va_arg(args, double));
+				break;
+			case 's':/*For strings*/
+				str_arg = va_arg(args, char *);
+				if (str_arg == NULL)
+				{
+					printf("(nil)");
+				} else
+				{
+					printf("%s", str_arg);
+				}
+				break;
+			default:
+				break;
+		}
+		i++;
 	}
+	va_end(args);
+	printf("\n");
 }

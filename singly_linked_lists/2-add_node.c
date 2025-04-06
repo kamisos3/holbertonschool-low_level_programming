@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -24,6 +25,8 @@ list_t *add_node(list_t **head, const char *str)
 		free(new_node);/*Frees nodes memory*/
 		return (NULL);
 	}
+	new_node->len = strlen(str);/*Verifies lenght of the string*/
+
 	new_node->next = *head;
 	/*Connects new node existing list, goes to what head is pointing*/
 	*head = new_node;/*Goes to the beggining of the head of our list*/

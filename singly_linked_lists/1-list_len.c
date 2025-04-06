@@ -14,9 +14,9 @@ size_t list_len(const list_t *h)
 
 	while (h != NULL)
 	{
-		count++;
+		count++;/*Counts elements in list_t*/
 
-		h = h->next;
+		h = h->next;/*Moves to the next node with the data*/
 	}
-	return (count);
+	return (count);/*Retur how many elements are in list_t*/
 }

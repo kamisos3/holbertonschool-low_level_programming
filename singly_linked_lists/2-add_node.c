@@ -11,6 +11,7 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
+	int lenght = 0;
 	list_t *new_node;/*Creates new node*/
 
 	new_node = malloc(sizeof(list_t));
@@ -25,7 +26,11 @@ list_t *add_node(list_t **head, const char *str)
 		free(new_node);/*Frees nodes memory*/
 		return (NULL);
 	}
-	new_node->len = strlen(str);/*Verifies lenght of the string*/
+	while (str[lenght] != '\0')
+	{
+		lenght++;
+	}
+	new_node->len = lenght;/*Verifies lenght of the string*/
 
 	new_node->next = *head;
 	/*Connects new node existing list, goes to what head is pointing*/

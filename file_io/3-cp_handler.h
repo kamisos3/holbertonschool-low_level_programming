@@ -9,7 +9,10 @@
  */
 void print_error_and_exit(int code, const char *message, const char *filename)
 {
-	dprintf(STDERR_FILENO, message, filename);
+	if (filename)
+		dprintf(STDERR_FILENO, message, filename);
+	else
+		dprintf(STDERR_FILENO, "%s", message);
 	exit(code);
 }
 

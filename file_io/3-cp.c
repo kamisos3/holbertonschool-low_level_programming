@@ -1,7 +1,7 @@
 #include "3-cp_handler.h"
 #include "main.h"
 /**
- * main - Appends file
+ * main - Copies file content
  * @argc: argument count
  * @argv: argument vector
  *
@@ -17,9 +17,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	{
-		print_error_and_exit(99, "Error: Can't write to %s\n", NULL);
-	}
+
 	fd_from = open_file(argv[1], O_RDONLY, 0);
 	if (fd_from == -1)
 	{

@@ -15,15 +15,15 @@ void print_error_and_exit(int code, const char *message, const char *filename)
 
 /**
 * open_file - Opens a file with certain flags/permissions
-* @filename: file name
+* @file_name: file name
 * @flags: flags for open
 * @permissions: Allows to open
 *
 * Return: File descriptor, -1 if fails
 */
-int open_file(const char *filename, int flags, int permissions)
+int open_file(const char *file_name, int flags, int permissions)
 {
-	return (open(filename, flags, permissions));
+	return (open(file_name, flags, permissions));
 }
 
 /**

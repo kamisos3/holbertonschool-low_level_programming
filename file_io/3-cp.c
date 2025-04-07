@@ -13,7 +13,6 @@
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
-	char *dest_dir;
 
 	if (argc != 3)
 	{
@@ -31,17 +30,6 @@ int main(int argc, char *argv[])
 	{
 		print_error_and_exit(99, "Error: Can't write to %s\n", argv[2]);
 	}
-	if (access(argv[1], F_OK) == -1)
-	{
-		print_error_and_exit(98, "Error: Source file does not exist: %s\n", argv[1]);
-	}
-	dest_dir = dirname(argv[2]);
-
-	if (access(dest_dir, F_OK) == -1)
-	{
-		print_error_and_exit(99, "Error: Destination directory does'nt exist: %s\n", dest_dir);
-	}
-
 
 	copy_content(fd_from, fd_to);
 

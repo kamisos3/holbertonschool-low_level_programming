@@ -4,7 +4,7 @@
  * @code: exit code
  * @message: error message
  * @filename: file name that has errror
- *
+ * @argv: argument vector
  *
  */
 void print_error_and_exit(int code, const char *message, const char *filename)
